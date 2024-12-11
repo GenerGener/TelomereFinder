@@ -1,9 +1,9 @@
 # telomere repo
 Scripts to identify putative telomeric and subtelomeric sequences from draft genome assemblies.
 
-# Telomere finder tutorial
+# telomere-finder tutorial
 
-This tool helps identify potential telomeric repeats in genome assemblies by analyzing k-mer occurrences at contig ends. It supports both compressed and uncompressed FASTA inputs and can output results in BED or GFF format.
+The tool telomere-finder.py helps identify potential telomeric repeats in genome assemblies by analyzing k-mer occurrences at contig ends. It supports both compressed and uncompressed FASTA inputs and can output results in BED or GFF format.
 
 ## Installation
 
