@@ -107,6 +107,7 @@ Some known variants:
 2. Look for reverse complement sequences
 3. Pay attention to k-mer clustering at contig ends
 4. Consider both frequency and position of repeats
+5. The current output (as of December 10, 2024) identifies top kmers in the CLI summary, which might not match canonical telomeric repeats like TTAGGG.
 
 ## Contributing
 
