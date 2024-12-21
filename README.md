@@ -70,6 +70,23 @@ The tool is particularly useful for:
 
 Note that the tool considers sequences within 1000bp of contig ends as potential telomeric regions by default.
 
+1. First, this variable in the constructor defines what counts as an "end":
+```python
+def __init__(self, kmer_sizes, end_region_size=1000):
+    self.end_region_size = end_region_size
+```
+
+2. Then in the `process_sequence` method, a k-mer is marked as being at an "end" if it meets this condition:
+```python
+'is_end': i < self.end_region_size or i > seq_len - self.end_region_size
+```
+
+Breaking this down:
+- `i < self.end_region_size`: This checks if the k-mer starts within the first 1000bp of the sequence
+- `i > seq_len - self.end_region_size`: This checks if the k-mer starts within the last 1000bp of the sequence
+
+Any k-mer that occurs within 1000 bases of either the start or end of a contig is considered to be at an "end". This is somewhat arbitrary - telomeres can be longer or shorter than 1000bp.
+
 ## Advanced Usage
 
 ### Compressed Input Files
