@@ -1,4 +1,4 @@
-# telomere-finder: a tool to identify putative telomeric and subtelomeric sequences from draft genome assemblies.
+# telomere-finder: a tool to identify putative telomeric and subtelomeric sequences from draft genome assemblies
 
 # telomere-finder tutorial
 
