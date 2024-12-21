@@ -1,5 +1,5 @@
 # telomere repo
-Scripts to identify putative telomeric and subtelomeric sequences from draft genome assemblies.
+Identify putative telomeric and subtelomeric sequences from draft genome assemblies.
 
 # telomere-finder tutorial
 
