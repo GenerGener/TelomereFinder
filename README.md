@@ -53,7 +53,7 @@ CCCTAA: 12 occurrences at contig ends
 
 1. `.bed` or `.gff` file containing positions of all k-mer occurrences:
    - BED format (0-based): `chromosome start end kmer score strand`
-   - GFF format (1-based): Includes additional metadata about end proximity TODO double-check basing.
+   - GFF format (1-based): Includes additional metadata about end proximity TODO double-check basing. FOLLOWUP-20250101: In "telomere-finder-2.py" I corrected line 63.
 
 2. `.stats.txt` file containing:
    - K-mer occurrence counts
